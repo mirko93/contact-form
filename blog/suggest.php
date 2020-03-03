@@ -6,7 +6,7 @@
         <h1>Search Users</h1>
         <br>
         <form action="">
-            <input type="text" class="form-control" onkeyup="showSuggestion(this.value);" placeholder="Search Post...">
+            <input type="text" name="serach" class="form-control" onkeyup="showSuggestion(this.value);" placeholder="Search Post...">
         </form>
         <br>
         <p>Suggestions: <span id="output" style="font-weight: bold;"></span></p>
