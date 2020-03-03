@@ -10,19 +10,13 @@ $query->execute();
 $query->setFetchMode(PDO::FETCH_ASSOC);
 $single_post = $query->fetch();
 
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Blog</title>
+<?php include("include/header.php") ?>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-</head>
-<body>
+<br>
+<br>
 
     <div class="container">
         <a href="index.php" class="btn btn-outline-primary">Back</a>
@@ -31,9 +25,9 @@ $single_post = $query->fetch();
         <p><?php echo $single_post['body'] ?></p>
         <hr>
         <a href="editpost.php?id=<?php echo $single_post['id'] ?>" class="btn btn-success">Edit</a>
+        <a href="deletepost.php?id=<?php echo $single_post['id'] ?>" class="btn btn-danger" name="delete" type="delete">Delete</a>
     </div>
     
 
     
-</body>
-</html>
+    <?php include("include/footer.php") ?>

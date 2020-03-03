@@ -1,5 +1,6 @@
 <?php
 
+// primer
 $people[] = "Steve";
 $people[] = "John";
 $people[] = "Doe";

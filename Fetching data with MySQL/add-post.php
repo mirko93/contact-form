@@ -12,8 +12,6 @@ if (isset($_POST['submit'])) {
     $query->bindParam(':author', $author);
     $query->bindParam(':body', $body);
     $query->execute();
-    $query->setFetchMode(PDO::FETCH_ASSOC);
-    $posts = $query->fetchAll();
 
     $query = header('Location: index.php');
 }
@@ -21,17 +19,9 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Blog</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-</head>
-<body>
+<?php include("include/header.php") ?>
+    <br>
+    <br>
 
     <div class="container">
         <h1>Add Post</h1>
@@ -52,7 +42,4 @@ if (isset($_POST['submit'])) {
     </div>
 
     
-
-    
-</body>
-</html>
+    <?php include("include/footer.php") ?>
