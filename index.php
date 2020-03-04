@@ -3,16 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Projects</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #222;
+        color: #eee;
+        text-align: center;
+        margin: 100px auto;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h3 {
+        margin-bottom: 100px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .content div {
+        margin: 20px;
+    }
+
+    a {
+        font-size: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #555;
+    }
+
+    a:hover {
+        color: greenyellow;
+        transition: .5s ease-in;
+    }
+    </style>
    
 </head>
 <body>
-
-<h1>Welcome to my website</h1>
         
-        <h3>Projects</h3>
+    <h3>Projects</h3>
     <div class="content">
         
 
