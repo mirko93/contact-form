@@ -23,6 +23,10 @@
         <div>   
             <a href="google-clone" class="project2">Google Clone</a>
         </div>
+
+        <div>   
+            <a href="shopping" class="project3">Shopping</a>
+        </div>
         
     </div>
 
