@@ -23,9 +23,12 @@
     }
 
     h3 {
-        margin-bottom: 100px;
+        width: 50%;
+        margin: 0 auto;
         font-size: 30px;
         font-weight: bold;
+        border: 1px solid #333;
+        padding: 5px;
     }
 
     .content {
@@ -67,7 +70,11 @@
         </div>
 
         <div>   
-            <a href="shopping" class="project3">Shopping</a>
+            <a href="suggest-search" class="project3">Suggest Search</a>
+        </div>
+
+        <div>   
+            <a href="searchCustomer" class="project3">Search Customer</a>
         </div>
         
     </div>
